@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neural Scent - Menú</title>
+    <style>
+        :root {
+            --gold: #c5a059;
+            --navy: #0a192f;
+            --light-bg: #f9f9f9;
+            --white: #ffffff;
+            --refill-color: #2e7d32; /* Verde elegante para el relleno */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light-bg);
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .menu-container {
+            background: var(--white);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+            width: 100%;
+            max-width: 650px; /* Un poco más ancho para acomodar los datos */
+            border-top: 5px solid var(--gold);
+        }
+
+        .header {
+            background-color: var(--white);
+            text-align: center;
+            padding: 30px 20px 20px 20px;
+        }
+
+        .logo-img {
+            width: 120px;
+            height: auto;
+            display: block;
+            margin: 0 auto 15px auto;
+            border-radius: 50%;
+        }
+
+        .header h1 {
+            color: var(--navy);
+            margin: 0;
+            font-size: 28px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .header p {
+            color: var(--gold);
+            margin: 5px 0 0;
+            font-style: italic;
+            font-size: 14px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: var(--navy);
+            color: var(--gold);
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 1px;
+            padding: 15px 10px;
+            text-align: center;
+        }
+
+        td {
+            padding: 12px 10px;
+            border-bottom: 1px solid #eee;
+            color: #333;
+            vertical-align: middle;
+        }
+
+        .perfume-name {
+            font-weight: bold;
+            color: var(--navy);
+            display: block;
+            font-size: 14px;
+        }
+
+        .price-cell {
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        /* Estilos para los precios */
+        .price-normal {
+            font-weight: bold;
+            font-size: 15px;
+            display: block;
+        }
+
+        .price-refill {
+            display: block;
+            font-size: 11px;
+            color: var(--refill-color);
+            margin-top: 2px;
+            font-weight: bold;
+        }
+        
+        .price-refill::before {
+            content: "Relleno: ";
+            font-weight: normal;
+            opacity: 0.8;
+        }
+
+        tr:hover {
+            background-color: #f1f5f9;
+            transition: 0.3s;
+        }
+
+        .legend-box {
+            background-color: #f0fdf4; /* Fondo verdoso muy suave */
+            border-left: 4px solid var(--refill-color);
+            padding: 15px;
+            margin: 0;
+            font-size: 12px;
+            color: #1b4e20;
+            text-align: center;
+            line-height: 1.4;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 11px;
+            color: #888;
+            background: #fff;
+            border-top: 1px solid #eee;
+        }
+
+        .badge {
+            background: var(--gold);
+            color: white;
+            padding: 2px 6px;
+            border-radius: 8px;
+            font-size: 9px;
+            margin-left: 5px;
+            vertical-align: middle;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+
+<div class="menu-container">
+    <div class="header">
+        <img src="NS_logo.png" alt="Neural Scent Logo" class="logo-img">
+        <h1>NEURAL SCENT</h1>
+        <p>Inteligencia detrás de tu aroma</p>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th style="text-align: left;">Fragancia</th>
+                <th>3ml</th>
+                <th>5ml</th>
+                <th>10ml</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="perfume-name">212 Vip Rosé</span></td>
+                <td class="price-cell">
+                    <span class="price-normal">$94.0</span>
+                    <span class="price-refill">$76.0</span>
+                </td>
+                <td class="price-cell">
+                    <span class="price-normal">$154.0</span>
+                    <span class="price-refill">$126.0</span>
+                </td>
+                <td class="price-cell">
+                    <span class="price-normal">$297.0</span>
+                    <span class="price-refill">$252.0</span>
+                </td>
+            </tr>
+            <tr>
+                <td><span class="perfume-name">Acqua Di Gio Profondo</span></td>
+                <td class="price-cell">
+                    <span class="price-normal">$94.0</span>
+                    <span class="price-refill">$76.0</span>
+                </td>
+                <td class="price-cell">
+                    <span class="price-normal">$155.0</span>
+                    <span class="price-refill">$127.0</span>
+                </td>
+                <td class="price-cell">
+                    <span class="price-normal">$300.0</span>
+                    <span class="price-refill">$254.0</span>
+                </td>
+            </tr>
+            <tr>
+                <td><span class="perfume-name">Bad Boy</span></td>
+                <td class="price-cell">
+                    <span class="price-normal">$74.0</span>
+                    <span class="price-refill">$58.0</span>
+                </td>
+                <td class="price-cell">
+                    <span class="price-normal">$121.0</span>
+                    <span class="price-refill">$97.0</span>
+                </td>
+                <td class="price-cell">
+                    <span class="price-normal">$231.0</span>
+                    <span class="price-refill">$194.0</span>
+                </td>
+            </tr>
+            <tr>
+                <td><span class="perfume-name">Good Girl</span></td>
+                <td class="price-cell">
+                    <span class="price-normal">$107.0</span>
+                    <span class="price-refill">$89.0</span>
+                </td>
+                <td class="price-cell">
+                    <span class="price-normal">$178.0</span>
+                    <span class="price-refill">$148.0</span>
+                </td>
+                <td class="price-cell">
+                    <span class="price-normal">$346.0</span>
+                    <span class="price-refill">$295.0</span>
+                </td>
+            </tr>
+            <tr>
+                <td><span class="perfume-name">La Vie Est Belle</span></td>
+                <td class="price-cell">
+                    <span class="price-normal">$161.0</span>
+                    <span class="price-refill">$136.0</span>
+                </td>
+                <td class="price-cell">
+                    <span class="price-normal">$266.0</span>
+                    <span class="price-refill">$225.0</span>
+                </td>
+                <td class="price-cell">
+                    <span class="price-normal">$521.0</span>
+                    <span class="price-refill">$451.0</span>
+                </td>
+            </tr>
+            <tr>
+                <td><span class="perfume-name">Le Beau Paradise Garden</span><span class="badge">TREND</span></td>
+                <td class="price-cell">
+                    <span class="price-normal">$69.0</span>
+                    <span class="price-refill">$53.0</span>
+                </td>
+                <td class="price-cell">
+                    <span class="price-normal">$113.0</span>
+                    <span class="price-refill">$90.0</span>
+                </td>
+                <td class="price-cell">
+                    <span class="price-normal">$215.0</span>
+                    <span class="price-refill">$178.0</span>
+                </td>
+            </tr>
+            <tr>
+                <td><span class="perfume-name">Miss Dior Blooming</span></td>
+                <td class="price-cell">
+                    <span class="price-normal">$101.0</span>
+                    <span class="price-refill">$82.0</span>
+                </td>
+                <td class="price-cell">
+                    <span class="price-normal">$168.0</span>
+                    <span class="price-refill">$138.0</span>
+                </td>
+                <td class="price-cell">
+                    <span class="price-normal">$324.0</span>
+                    <span class="price-refill">$276.0</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="legend-box">
+        <strong>♻️ Programa de Relleno:</strong><br>
+        Los precios marcados como "Relleno" aplican únicamente cuando presentas un envase adquirido previamente con nosotros.
+    </div>
+
+    <div class="footer">
+        Aceptamos tarjetas de crédito y débito. Gracias por elegir Neural Scent.
+    </div>
+</div>
+
+</body>
+</html>
